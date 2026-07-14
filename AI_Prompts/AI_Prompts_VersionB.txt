@@ -1,0 +1,129 @@
+AI PROMPTS USED FOR VERSION B
+
+AI Tool: ChatGPT
+
+Project: Student Result Management System
+
+Programming Language: Java
+
+PROMPT 1 - SYSTEM DESIGN AND IMPROVEMENT ANALYSIS
+
+I am developing a console-based Student Result Management System in Java.
+
+The system should support the following functions:
+1. Add a student using a unique student ID and name.
+2. Enter marks for Programming, Database Systems, and Mathematics.
+3. Calculate the student's average mark.
+4. Determine the grade based on the calculated average.
+5. View an individual student's result.
+6. Search for a student using the student ID.
+7. Display all student records.
+8. Exit the application.
+
+The traditional implementation has the following weaknesses:
+- Marks greater than 100 are accepted.
+- Negative marks are accepted.
+- Non-numeric menu input causes an InputMismatchException and terminates the program.
+- Duplicate student IDs are accepted.
+
+Suggest an improved object-oriented design for an AI-assisted version of this system.
+
+Focus on:
+- input validation
+- exception handling
+- code readability
+- maintainability
+
+Suggest the required Java classes and the responsibilities of each class.
+
+Do not generate the complete program code yet.
+
+PROMPT 2:
+Generate a Java Student class for the Student Result Management System.
+
+The class should store:
+- student ID
+- student name
+- Programming mark
+- Database Systems mark
+- Mathematics mark
+- average
+- grade
+
+Requirements:
+- Apply encapsulation using private fields.
+- The constructor should receive only student ID and student name.
+- Provide a method to set the three subject marks.
+- Automatically calculate the average after marks are entered.
+- Automatically calculate the grade based on the average.
+
+Use the following grading criteria:
+75-100 = A
+65-74 = B
+55-64 = C
+45-54 = D
+Below 45 = F
+
+Provide getter methods required by other classes.
+Keep the code readable and maintainable.
+
+PROMPT 3 - INPUT VALIDATION AND EXCEPTION HANDLING
+
+The traditional version of my Java Student Result Management System has input handling problems.
+
+The following problems were identified during testing:
+1. Entering "abc" as a menu choice causes an InputMismatchException and terminates the program.
+2. Marks greater than 100 are accepted.
+3. Negative marks are accepted.
+
+Create a reusable Java InputValidator class.
+
+Requirements:
+- Safely read integer input.
+- Prevent the application from crashing when non-numeric input is entered.
+- Display a clear error message for invalid input.
+- Validate student marks so that only values from 0 to 100 are accepted.
+- Ask the user to enter the value again when invalid input is provided.
+- Include a method for reading a non-empty String.
+
+Use Scanner and keep the validation logic separate from the Main class for improved readability and maintainability.
+
+Explain how the class improves error handling compared with directly using Scanner.nextInt().
+
+PROMPT 4 - DUPLICATE STUDENT ID HANDLING
+
+The traditional version of my Java Student Result Management System allows multiple students to be added with the same student ID.
+
+Generate an improved StudentManager class using ArrayList<Student>.
+
+Requirements:
+- Store Student objects using ArrayList.
+- Search for a student using the student ID.
+- Prevent duplicate student IDs.
+- The addStudent method should return a boolean indicating whether the student was successfully added.
+- Display all students in a readable table.
+- Keep student management responsibilities separate from input validation and the Main class.
+
+Explain how preventing duplicate IDs improves data integrity and maintainability.
+
+PROMPT 5 - MAIN CLASS INTEGRATION
+
+Generate the Main class for the AI-assisted Java Student Result Management System.
+
+Use the existing Student, StudentManager, and InputValidator classes.
+
+The menu should provide:
+1. Add Student
+2. Enter Student Marks
+3. View Student Result
+4. Search Student
+5. Display All Students
+6. Exit
+
+Requirements:
+- Use InputValidator for all user inputs.
+- Handle non-numeric menu input without terminating the application.
+- Validate marks between 0 and 100.
+- Display an error message when a duplicate student ID is entered.
+- Display an error message when a student is not found.
+- Keep the Main class readable and use separate methods for menu operations.

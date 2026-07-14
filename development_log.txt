@@ -1,0 +1,110 @@
+AI-ASSISTED PROGRAMMING ASSESSMENT
+DEVELOPMENT LOG
+
+Project:
+Student Management System
+
+Programming Language:
+Java
+
+VERSION A - TRADITIONAL APPROACH
+
+AI Assistance:
+None
+
+Start Date:10/07/2026
+
+Start Time:2:47PM
+
+End Date:11/07/2026
+
+End Time:8:34PM
+
+Total Development Time:
+
+Errors Encountered:
+
+1. Marks greater than 100 were accepted.
+2. Negative marks were accepted.
+3. Non-numeric menu input caused InputMismatchException.
+4. Duplicate student IDs were accepted.
+
+VERSION A TEST RESULTS
+
+Test 1 - Normal Execution
+Result:
+The system successfully added students, entered marks,
+calculated averages and grades, and displayed all student records.
+
+Test 2 - Mark Greater Than 100
+Input:
+Programming Mark = 120
+
+Result:
+The system accepted the invalid mark and calculated the result.
+
+Weakness:
+No mark range validation was implemented.
+
+
+Test 3 - Negative Mark
+Input:
+Programming Mark = -20
+
+Result:
+The system accepted the negative mark.
+
+Weakness:
+The system did not validate marks before storing them.
+
+
+Test 4 - Non-Numeric Menu Input
+Input:
+abc
+
+Result:
+The application terminated with an InputMismatchException.
+
+Weakness:
+No exception handling was implemented for invalid menu input.
+
+
+Test 5 - Duplicate Student ID
+Input:
+Student 1 ID = 101
+Student 2 ID = 101
+
+Result:
+Both student records were accepted.
+
+Weakness:
+No duplicate student ID validation was implemented.
+
+Solutions Applied:
+
+1.
+
+2.
+
+3.
+
+VERSION B - AI-ASSISTED APPROACH
+
+AI Tool:
+ChatGPT
+
+Start Date:13/07/2026
+
+Start Time:2:56PM
+
+End Date:14/07/2026
+
+End Time:10:25PM
+
+Total Development Time:
+
+AI Prompts Used:
+
+Errors Encountered:
+
+AI-Assisted Improvements:
