@@ -18,9 +18,9 @@ Start Time:2:47PM
 
 End Date:11/07/2026
 
-End Time:8:34PM
+End Time:11:34PM
 
-Total Development Time:
+Total Development Time:32 Hours 47 minutes
 
 Errors Encountered:
 
@@ -99,12 +99,27 @@ Start Time:2:56PM
 
 End Date:14/07/2026
 
-End Time:10:25PM
+End Time:8:27PM
 
-Total Development Time:
+Total Development Time:29 Hours 31 minutes
 
 AI Prompts Used:
 
 Errors Encountered:
 
 AI-Assisted Improvements:
+AI-Assisted Improvements:
+
+1. Reusable InputValidator class was introduced.
+
+2. Non-numeric input was handled using NumberFormatException.
+
+3. Marks were validated to remain between 0 and 100.
+
+4. Duplicate student IDs were rejected.
+
+5. Student average and grade were automatically calculated after marks were entered.
+
+6. Main class responsibilities were separated into individual methods.
+
+7. Input validation logic was separated from the Main class.
